@@ -9,116 +9,55 @@
 </head>
 
 <body>
+    <div class="particulas"></div>
 
-    <!-- HEADER -->
-    <header class="header principal">
-        <div class="container">
-
-            <h1 class="logo">Gustavo Sousa</h1>
-
-            <nav class="navbar">
-                <ul>
-                    <li class="efeito-cursor">
-                        <a href="#inicio" class="menu-link">Inicio</a>
-                    </li>
-                    <li class="efeito-cursor">
-                        <a href="#sobre" class="menu-link">Sobre</a>
-                    </li>
-                    <li class="efeito-cursor">
-                        <a href="#projetos" class="menu-link">Projetos</a>
-                    </li>
-                    <li class="efeito-cursor">
-                        <a href="#contatos" class="menu-link">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li class="efeito-cursor">
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li class="efeito-cursor">
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li class="efeito-cursor">
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li class="efeito-cursor">
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
 
 
-    <!-- INÍCIO  -->
-    <section id="inicio" class="hero principal">
-        <div class="container-hero">
-            <div class="hero-text">
-                <h2>Olá, eu sou <span class="typing"> Gustavo Sousa</span></h2>
-                <p class="sub-titulo">Desenvolvedor Front End Iniciante | Criador de soluções digitais e mods
-                    profissionais.</p>
-            </div>
+    <!-- SOBRE MIM  -->
+    <main id="inicio" class="principal">
+        <img src="./assets/eu.jpg" alt="Foto de Gustavo Sousa" class="foto-perfil">
+        <h1>Gustavo Sousa</h1>
+        <p class="principal-sub-titulo">Desenvolvedor Front End Iniciante</p>
+    </main>
 
-            <div class="hero-img">
-                <img src="./assets/eu.jpg" alt="Foto de Gustavo Sousa" class="foto-perfil">
-            </div>
-        </div>
-    </section>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Sou um desenvolvedor em início de carreira com paixão por tecnologia e criação de soluções web.
+                Meu primeiro contato com programação aconteceu ainda no ensino médio,
+                onde participei de um curso introdutório e, como parte do TCC,
+                desenvolvi em grupo um site de supermercado — minha primeira experiência real construindo
+                algo com código.
+                <br>
+                <br>
+                Desde então, venho aprofundando meus conhecimentos por meio do curso do Dev Club,
+                estudando HTML, CSS, JavaScript, Node.js e React. Aplicando o que aprendo em projetos pessoais,
+                sempre buscando evoluir tanto tecnicamente quanto criativamente.
+                <br>
+                <br>
+                Este portfólio reúne os projetos que desenvolvi até agora,
+                refletindo minha trajetória de aprendizado e meu compromisso com a melhoria contínua.
+                Estou animado com as possibilidades que a programação oferece e aberto a oportunidades
+                que me permitam crescer na área e contribuir com soluções impactantes.
+            </p>
 
-
-    <!-- SOBRE -->
-    <section id="sobre" class="sobre principal">
-        <div class="container-sobre">
-            <h2 class="sobre-titulo">Sobre mim</h2>
-
-            <div class="sobre-grid">
-
-                <div class="card">
-                    <h3> Quem Sou </h3>
-                    <p>
-                        Sou um desenvolvedor iniciante focado em criar interfaces modernas e funcionais. Tenho
-                        experiência com HTML, CSS e JavaScript, além de conhecimento básico em Node.js e React. Estou
-                        sempre buscando evoluir e construir projetos cada vez melhores.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3> Skills </h3>
-
-                    <div class="skill">
-                        <p>HTML5</p>
-                        <div class="bar">
-                            <div class="fill" style="width: 80%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p>CSS3</p>
-                        <div class="bar">
-                            <div class="fill" style="width: 55%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p>JavaScript</p>
-                        <div class="bar">
-                            <div class="fill" style="width: 30%;"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="skill">
-                        <p>Node.js</p>
-                        <div class="bar">
-                            <div class="fill" style="width: 10%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p>React</p>
-                        <div class="bar">
-                            <div class="fill" style="width: 5%;"></div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <h3> Objetivo </h3>
-                    <p>
-                        Entrar no mercado de desenvolvimento e evoluir como programador front-end, criando projetos
-                        modernos, responsivos e com boa experiência de usuário. Busco aprender novas tecnologias
-                        enquanto coloco em prática o que já sei.
-                    </p>
-                </div>
-
-            </div>
         </div>
     </section>
 
@@ -189,7 +128,7 @@
 
 
     <!-- CONTATO -->
-    <section id="contatos" class="contatos principal">
+    <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em Contato</h2>
 
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
@@ -244,7 +183,14 @@
 
 
     <footer>
-        © 2025 - Gustavo Sousa Pereira
+        <a href="https://www.instagram.com/gust4vo_beckham/" class="instagram efeito-cursor">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                <path
+                    d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM7 0H17C20.866 0 24 3.13401 24 7V17C24 20.866 20.866 24 17 24H7C3.13401 24 0 20.866 0 17V7C0 3.13401 3.13401 0 7 0ZM18.5 6.5C18.5 5.67157 17.8284 5 17 5C16.1716 5 15.5 5.67157 15.5 6.5C15.5 7.32843 16.1716 8 17 8C17.8284 8 18.5 7.32843 18.5 6.5ZM12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6ZM12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8Z"
+                    fill="black" />
+            </svg>
+            <span>@gust4vo_beckham</span>
+        </a>
     </footer>
 
 
